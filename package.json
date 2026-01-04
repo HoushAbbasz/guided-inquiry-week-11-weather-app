@@ -1,13 +1,14 @@
 {
   "name": "weather-app-node",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
+    "start": "node src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Housh Abbaszadeh",
   "license": "ISC",
-  "description": "",
+  "description": "A weather application that provides current weather data with temperature unit selection",
   "dependencies": {
     "express": "^5.2.1",
     "hbs": "^4.2.0",
