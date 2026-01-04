@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" type="image/png" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get your weather!</p>
+
+        <form>
+            <input type="text" placeholder="Location">
+            
+            <div class="custom-select">
+                <div class="select-button" id="selectButton">
+                    Select a temperature unit
+                </div>
+                <div class="select-dropdown" id="selectDropdown">
+                    <div class="select-option" data-value="m">Celsius</div>
+                    <div class="select-option" data-value="f">Fahrenheit</div>
+                    <div class="select-option" data-value="s">Kelvin</div>
+                </div>
+                <input type="hidden" id="units" value="m">
+            </div>
+            
+            <button type="submit">Search</button>
+        </form>
+
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+    </div>
+
+    {{>footer}}
+    
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
